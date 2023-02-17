@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: get a random number and check its 
+ * Description: get a random number and check its
  * Return: 0
  */
 int main(void)
