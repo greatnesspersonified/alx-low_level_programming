@@ -1,23 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
+
+#include <ctype.h>
 /**
  * main - main block
- * Description: prints all single digit number of base 10
- * starting from 0, followed by a new line
- * Return: always 0 (success)
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char ch;
+	int digit;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		putchar(ch);
+		putchar(digit);
+		if (digit == '9')
+		{
+			digit = 'a';
+			for (; digit <= 'f'; digit++)
+			{
+				putchar(digit);
+			}
+			break;
+		}
 	}
-	for (ch = 'a'; ch <= 'g'; ch++)
-	{
-		putchar(ch);
-	}
-	putchar(ch);
+	putchar('\n');
 	return (0);
 }
