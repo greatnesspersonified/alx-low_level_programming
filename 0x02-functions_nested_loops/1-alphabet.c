@@ -3,22 +3,20 @@
 /**
  * print_alphabet - entry point
  *
- * Description - prints alphabet in lowercase, followed by a new line
- * Return
+ * Return: 0
  */
 
 void print_alphabet(void)
 
 {
-	char chr;
+	char c = 'a';
 
-	char chr = 'a';
-
-	while (chr <= 'z')
+	while (c <= 'z')
 	{
-		_putchar(chr);
-		chr++;
+		_putchar(c);
+		c++;
 	}
 
 	_putchar('\n');
+
 }
