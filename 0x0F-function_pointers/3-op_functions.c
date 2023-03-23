@@ -1,4 +1,3 @@
-:
 /**
  * op_add - Adds two numbers
  * @a: int 1
