@@ -30,7 +30,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	size = _strlen(text_content);
+	size = strlen(text_content);
 	w = write(fn, text_content, size);
 
 	if (w == -1)
